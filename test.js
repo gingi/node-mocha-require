@@ -1,6 +1,4 @@
 var requirejs = require('requirejs');
-var mocha = require('mocha');
-var should = require('should');
 
 requirejs.config({
     nodeRequire: require,
