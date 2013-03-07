@@ -3,14 +3,15 @@ var mocha = require('mocha');
 var should = require('should');
 
 requirejs.config({
-    nodeRequire: require
+    nodeRequire: require,
+    baseUrl: __dirname
 });
 
 describe("simple test", function () {
-    requirejs(['simple'], function (Simple) {
-        // NEVER REACHES HERE!
-        it("should work", function () {
+    it("should work", function (done) {
+        requirejs(['simple'], function (Simple) {
             true.should.be.true;
+            done();
         })
     })
 });
