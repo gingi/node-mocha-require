@@ -3,6 +3,7 @@
 	"dependencies": {
 		"requirejs" : ">=2.1.5",
         "mocha"     : ">=1.8.1",
-        "should"    : ">=1.2.2"
+        "should"    : ">=1.2.2",
+        "underscore": ">=1.4.4"
 	}
 }
